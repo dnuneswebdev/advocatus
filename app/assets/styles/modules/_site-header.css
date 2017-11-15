@@ -1,0 +1,69 @@
+.site-header {
+    position: absolute;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    &__menu-icon {
+        width: 25px;
+        height: 20px;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        z-index: 10;
+
+        &__top {
+            position: absolute;
+            width: 10px;
+            height: 3px;
+            top: 0;
+            left: 0;
+            background-color: #000;
+            transform-origin: 0 0;
+            transition: transform 0.3s ease-out;
+        }
+
+        &__middle {
+            position: absolute;
+            width: 15px;
+            height: 3px;
+            top: 8px;
+            left: 0;
+            background-color: #000;
+            transition: all 0.3s ease-out;
+            transform-origin: 0 50%;
+        }
+
+        &__bottom{
+            position: absolute;
+            width: 20px;
+            height: 3px;
+            top: 16px;
+            left: 0;
+            background-color: #000;
+            transform-origin: 0 100%;
+            transition: transform 0.3s ease-out;
+        }
+
+        @mixin atSmall {
+            display: none;
+        }
+
+    }
+}

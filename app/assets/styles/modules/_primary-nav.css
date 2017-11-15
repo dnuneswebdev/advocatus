@@ -1,0 +1,60 @@
+.primary-nav {
+    
+    
+
+
+    &__brand {
+        font-size: 1.562rem;
+        font-weight: 900;
+        padding-top: 30px;
+        padding-bottom: 20px;
+        font-family: "Playfair Display";
+
+        span {
+            color: $mainGold;
+        }
+    }
+
+    &__nav-item {
+        padding: 40px 0 10px 0;
+        margin-right: 25px;
+        font-weight: 600;
+        font-size: 0.875rem;
+        font-family: "open sans";
+        transition: all 0.2s ease-in-out;
+
+        &:hover {
+            border-bottom: 5px solid $mainGold;
+        }
+
+    }
+
+    &--pull-right {
+        float: right;
+
+    }
+
+    &--pull-left {
+        float: left;
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+        
+        @mixin clearfix;
+    }
+
+    li {
+        list-style: none;
+        display: inline-block;
+    }
+
+    a {
+        text-transform: uppercase;
+        display: block;
+        text-decoration: none;
+        color: #000;
+        
+    }
+}
