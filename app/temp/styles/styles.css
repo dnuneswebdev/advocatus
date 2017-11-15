@@ -469,24 +469,27 @@ img {
 
 .site-header {
     position: absolute;
-    position: fixed;
+    position: -webkit-sticky;
+    position: sticky;
     width: 100%;
-    z-index: 2;
+    height: 100%;
+    z-index: 1;
+    overflow: hidden;
 }
 
 .site-header__menu-icon {
         width: 25px;
         height: 20px;
         position: absolute;
-        top: 10px;
-        right: 10px;
+        top: 35px;
+        right: 25px;
         z-index: 10;
 
     }
 
 .site-header__menu-icon__top {
             position: absolute;
-            width: 10px;
+            width: 20px;
             height: 3px;
             top: 0;
             left: 0;
@@ -501,7 +504,7 @@ img {
 
 .site-header__menu-icon__middle {
             position: absolute;
-            width: 15px;
+            width: 25px;
             height: 3px;
             top: 8px;
             left: 0;
@@ -514,7 +517,7 @@ img {
 
 .site-header__menu-icon__bottom{
             position: absolute;
-            width: 20px;
+            width: 30px;
             height: 3px;
             top: 16px;
             left: 0;
@@ -527,19 +530,18 @@ img {
             transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
         }
 
-@media (min-width: 530px) {
+@media (min-width: 913px) {
 
 .site-header__menu-icon {
             display: none
 
-    }
-  }
+    }}
 
 .primary-nav__brand {
         font-size: 1.562rem;
         font-weight: 900;
         padding-top: 30px;
-        padding-bottom: 20px;
+        padding-bottom: 30px;
         font-family: "Playfair Display";
     }
 
@@ -548,13 +550,14 @@ img {
         }
 
 .primary-nav__nav-item {
-        padding: 40px 0 10px 0;
+        padding: 38px 0 10px 0;
         margin-right: 25px;
         font-weight: 600;
         font-size: 0.875rem;
         font-family: "open sans";
         -webkit-transition: all 0.2s ease-in-out;
         transition: all 0.2s ease-in-out;
+
 
     }
 
@@ -564,8 +567,14 @@ img {
 
 .primary-nav--pull-right {
         float: right;
-
+        display: none;
     }
+
+@media (min-width: 913px) {
+
+.primary-nav--pull-right {
+            display: initial
+    }}
 
 .primary-nav--pull-left {
         float: left;
@@ -602,5 +611,122 @@ img {
     margin-left: auto;
     margin-right: auto;
     overflow: hidden;
+    
 }
+
+.large-hero {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+        
+
+}
+
+.large-hero__image {
+        /* width: 100%;
+        height: 100%; */
+
+        display: block;
+        
+    }
+
+.large-hero__text-content {
+        position: absolute;
+        left: 5%;
+        bottom: 20%;
+        color: #FFF;
+        padding: 0;
+        margin: 0;
+        display: block;
+    }
+
+@media (min-width: 800px) {
+
+.large-hero__text-content {
+            left: 23.5%;
+            bottom: 15%
+    }
+  }
+
+.large-hero__title {
+        font-size: 2.812rem;
+        font-weight: 100;
+        margin: 0;
+        letter-spacing: 1px;
+        font-family: "Playfair Display";
+        
+    }
+
+@media (min-width: 800px) {
+
+.large-hero__title {
+            font-size: 3.625rem
+        
+    }
+  }
+
+.large-hero__subtitle {
+        font-size: 1.875rem;
+        font-weight: 100;
+        margin: 0;
+        font-family: "open sans";
+        
+        
+    }
+
+.large-hero__btn {
+        position: absolute;
+        bottom: 5%;
+        left: 4%;
+  
+    }
+
+@media (min-width: 800px) {
+
+.large-hero__btn {
+            left: 23%
+  
+    }
+  }
+
+@media (min-width: 913px) {
+
+.large-hero__btn {
+
+            bottom: 20%;
+            left: 65%
+  
+    }}
+
+.border--b-left {
+        border-left: 2px solid #e8bf5d;
+        padding-left: 15px;
+        display: block;
+        width: 100%;
+        
+    }
+
+.btn {
+    background-color: #e8bf5d;
+    padding: 10px 30px;
+    color: #000;
+    font-family: "playfair display";
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    
+
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+.row__medium-6 {
+        width: 50%;
+        float: left;
+    }
 

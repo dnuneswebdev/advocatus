@@ -1,0 +1,10 @@
+.border {
+
+    &--b-left {
+        border-left: 2px solid $mainGold;
+        padding-left: 15px;
+        display: block;
+        width: 100%;
+        
+    }
+}

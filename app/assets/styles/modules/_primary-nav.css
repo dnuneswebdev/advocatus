@@ -7,31 +7,37 @@
         font-size: 1.562rem;
         font-weight: 900;
         padding-top: 30px;
-        padding-bottom: 20px;
+        padding-bottom: 30px;
         font-family: "Playfair Display";
-
+        
         span {
             color: $mainGold;
         }
     }
 
     &__nav-item {
-        padding: 40px 0 10px 0;
+        padding: 38px 0 10px 0;
         margin-right: 25px;
         font-weight: 600;
         font-size: 0.875rem;
         font-family: "open sans";
         transition: all 0.2s ease-in-out;
+        
 
         &:hover {
             border-bottom: 5px solid $mainGold;
         }
 
+
     }
 
     &--pull-right {
         float: right;
+        display: none;
 
+        @mixin atMedium2 {
+            display: initial;
+        }
     }
 
     &--pull-left {

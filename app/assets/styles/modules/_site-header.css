@@ -1,11 +1,13 @@
 .site-header {
     position: absolute;
-    position: fixed;
+    position: sticky;
     width: 100%;
-    z-index: 2;
+    height: 100%;
+    z-index: 1;
+    overflow: hidden;
 
-
-
+    
+    
 
 
 
@@ -24,13 +26,13 @@
         width: 25px;
         height: 20px;
         position: absolute;
-        top: 10px;
-        right: 10px;
+        top: 35px;
+        right: 25px;
         z-index: 10;
 
         &__top {
             position: absolute;
-            width: 10px;
+            width: 20px;
             height: 3px;
             top: 0;
             left: 0;
@@ -41,7 +43,7 @@
 
         &__middle {
             position: absolute;
-            width: 15px;
+            width: 25px;
             height: 3px;
             top: 8px;
             left: 0;
@@ -52,7 +54,7 @@
 
         &__bottom{
             position: absolute;
-            width: 20px;
+            width: 30px;
             height: 3px;
             top: 16px;
             left: 0;
@@ -61,7 +63,7 @@
             transition: transform 0.3s ease-out;
         }
 
-        @mixin atSmall {
+        @mixin atMedium2 {
             display: none;
         }
 
