@@ -4,6 +4,10 @@
 
     &__flex-1 {
         flex: 1;
+
+        &--jcsp {
+            justify-content: space-between;
+        }
     }
 
     &__flex-3 {
@@ -32,8 +36,7 @@
     
     &--lm {
         margin-left: 60px;
-        
-
     }
+
 
 }

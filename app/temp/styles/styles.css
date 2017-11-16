@@ -842,6 +842,7 @@ img {
     display: -ms-flexbox;
     display: flex;
 
+
 }
 
 .flex__flex-1 {
@@ -849,6 +850,12 @@ img {
             -ms-flex: 1;
                 flex: 1;
     }
+
+.flex__flex-1--jcsp {
+            -webkit-box-pack: justify;
+                -ms-flex-pack: justify;
+                    justify-content: space-between;
+        }
 
 .flex__flex-3 {
         -webkit-box-flex: 3;
@@ -888,8 +895,6 @@ img {
 
 .flex--lm {
         margin-left: 60px;
-        
-
     }
 
 .practice-area {
@@ -924,6 +929,29 @@ img {
         position: absolute;
         left: 0;
 
+    }
+
+.lawyers {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.lawyers__photo {
+        padding-top: 50px;
+        width: 90%;
+    }
+
+.lawyers__lawyer-name {
+        margin-bottom: 0;
+        letter-spacing: 0.5px;
+
+    }
+
+.lawyers__lawyer-job {
+        margin: 0;
+        color: #666666;
+        font-family: "open sans";
+        font-size: 0.8rem;
     }
 
 
