@@ -5,11 +5,18 @@
     &__title {
         font-weight: 400;
         font-size: 1.875rem;
+        letter-spacing: 1px;
     }
 
     &__subtitle {
         color: $mainGray;
         font-weight: 200;
         font-size: 1.25rem;
+
+        &--lighter {
+            color: $mainLightGray;
+            font-weight: 200;
+            font-size: 1.25rem;
+        }
     }
 }

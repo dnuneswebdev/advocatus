@@ -34,6 +34,14 @@
         padding-right: 45px;
     }
 
+    &--gutters-medium {
+        margin-right: -75px;
+    }
+
+    &--gutters-medium > div {
+        padding-right: 75px;
+    }
+
     &--gutters-large {
         margin-right: -100px;
     }

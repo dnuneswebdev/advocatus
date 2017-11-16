@@ -611,8 +611,15 @@ img {
     margin-left: auto;
     margin-right: auto;
     overflow: hidden;
-    
 }
+
+.wrapper--medium {
+        max-width: 976px;
+    }
+
+.wrapper--tp {
+        padding-top: 75px;
+    }
 
 .large-hero {
     position: relative;
@@ -756,6 +763,14 @@ img {
         padding-right: 45px;
     }
 
+.row--gutters-medium {
+        margin-right: -75px;
+    }
+
+.row--gutters-medium > div {
+        padding-right: 75px;
+    }
+
 .row--gutters-large {
         margin-right: -100px;
     }
@@ -772,6 +787,7 @@ img {
     position: relative;
     overflow: hidden;
     padding-top: 50px;
+    padding-bottom: 50px;
 
 
 }
@@ -806,6 +822,7 @@ img {
 .general-title__title {
         font-weight: 400;
         font-size: 1.875rem;
+        letter-spacing: 1px;
     }
 
 .general-title__subtitle {
@@ -813,6 +830,12 @@ img {
         font-weight: 200;
         font-size: 1.25rem;
     }
+
+.general-title__subtitle--lighter {
+            color: #b9b9b9;
+            font-weight: 200;
+            font-size: 1.25rem;
+        }
 
 .flex {
     display: -webkit-box;
@@ -868,4 +891,39 @@ img {
         
 
     }
+
+.practice-area {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #111111;
+    color: #FFF;
+
+}
+
+.practice-item {
+    padding-left: 55px;
+    position: relative;
+    padding-bottom: 30px;
+}
+
+.practice-item__title {
+        font-size: 1.312rem;
+        text-align: left;
+        font-weight: 400;
+        letter-spacing: 1px;
+    }
+
+.practice-item__description {
+        line-height: 1.562rem;
+        
+    }
+
+.practice-item__icon {
+        color: #e8bf5d;
+        display: block;
+        position: absolute;
+        left: 0;
+
+    }
+
 

@@ -1,0 +1,25 @@
+.practice-item {
+    padding-left: 55px;
+    position: relative;
+    padding-bottom: 30px;
+
+    &__title {
+        font-size: 1.312rem;
+        text-align: left;
+        font-weight: 400;
+        letter-spacing: 1px;
+    }
+
+    &__description {
+        line-height: 1.562rem;
+        
+    }
+
+    &__icon {
+        color: $mainGold;
+        display: block;
+        position: absolute;
+        left: 0;
+
+    }
+}

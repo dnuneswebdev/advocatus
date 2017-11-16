@@ -6,4 +6,12 @@
     margin-right: auto;
     overflow: hidden;
     
+
+    &--medium {
+        max-width: 976px;
+    }
+
+    &--tp {
+        padding-top: 75px;
+    }
 }
