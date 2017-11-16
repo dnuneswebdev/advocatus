@@ -1,0 +1,39 @@
+.flex {
+    display: flex;
+    
+
+    &__flex-1 {
+        flex: 1;
+    }
+
+    &__flex-3 {
+        flex: 3;
+    }
+
+    &__flex-5 {
+        flex: 5;
+    }
+
+    &__flex-6 {
+        flex: 6;
+    }
+
+    &__flex-7 {
+        flex: 7;
+    }
+
+    &__flex-8 {
+        flex: 8;
+    }
+
+    &__flex-12 {
+        flex: 2 0 0;
+    }
+    
+    &--lm {
+        margin-left: 60px;
+        
+
+    }
+
+}

@@ -6,4 +6,44 @@
         width: 50%;
         float: left;
     }
+
+    &__medium-7 {
+        width: 60%;
+        float: left;
+    }
+    
+    &__medium-8 {
+        width: 40%;
+        float: left;
+    }
+
+    &--lm {
+        margin-left: 28px;
+    }
+
+    &--tp {
+        padding-top: 25px;
+    }
+
+
+    &--gutters-small {
+        margin-right: -45px;
+    }
+
+    &--gutters-small > div {
+        padding-right: 45px;
+    }
+
+    &--gutters-large {
+        margin-right: -100px;
+    }
+
+    &--gutters-large > div {
+        padding-right: 100px;
+  }
+
+    &--gutters-medium {
+        margin-right:
+    }
+
 }

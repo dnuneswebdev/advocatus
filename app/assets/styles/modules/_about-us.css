@@ -1,0 +1,31 @@
+.about-us {
+    position: relative;
+    overflow: hidden;
+    padding-top: 50px;
+
+
+    &__item-title {
+        font-size: 1.312rem;
+
+    }
+    
+    
+    &__year {
+        font-family: "open sans";
+        font-weight: 900;
+        padding: 11px 0;
+        
+        
+
+    }
+
+    &__description {
+        font-family: "open sans";
+        color: $mainGray;
+        line-height: 1.562rem;
+        
+        
+    }
+
+
+}

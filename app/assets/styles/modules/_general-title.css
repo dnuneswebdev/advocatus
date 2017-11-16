@@ -1,0 +1,15 @@
+.general-title {
+    font-family: "FairPlay Display";
+    max-width: 610px;
+
+    &__title {
+        font-weight: 400;
+        font-size: 1.875rem;
+    }
+
+    &__subtitle {
+        color: $mainGray;
+        font-weight: 200;
+        font-size: 1.25rem;
+    }
+}

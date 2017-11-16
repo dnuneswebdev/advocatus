@@ -730,3 +730,142 @@ img {
         float: left;
     }
 
+.row__medium-7 {
+        width: 60%;
+        float: left;
+    }
+
+.row__medium-8 {
+        width: 40%;
+        float: left;
+    }
+
+.row--lm {
+        margin-left: 28px;
+    }
+
+.row--tp {
+        padding-top: 25px;
+    }
+
+.row--gutters-small {
+        margin-right: -45px;
+    }
+
+.row--gutters-small > div {
+        padding-right: 45px;
+    }
+
+.row--gutters-large {
+        margin-right: -100px;
+    }
+
+.row--gutters-large > div {
+        padding-right: 100px;
+  }
+
+.row--gutters-medium {
+        margin-right:
+    }
+
+.about-us {
+    position: relative;
+    overflow: hidden;
+    padding-top: 50px;
+
+
+}
+
+.about-us__item-title {
+        font-size: 1.312rem;
+
+    }
+
+.about-us__year {
+        font-family: "open sans";
+        font-weight: 900;
+        padding: 11px 0;
+        
+        
+
+    }
+
+.about-us__description {
+        font-family: "open sans";
+        color: #666666;
+        line-height: 1.562rem;
+        
+        
+    }
+
+.general-title {
+    font-family: "FairPlay Display";
+    max-width: 610px;
+}
+
+.general-title__title {
+        font-weight: 400;
+        font-size: 1.875rem;
+    }
+
+.general-title__subtitle {
+        color: #666666;
+        font-weight: 200;
+        font-size: 1.25rem;
+    }
+
+.flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+}
+
+.flex__flex-1 {
+        -webkit-box-flex: 1;
+            -ms-flex: 1;
+                flex: 1;
+    }
+
+.flex__flex-3 {
+        -webkit-box-flex: 3;
+            -ms-flex: 3;
+                flex: 3;
+    }
+
+.flex__flex-5 {
+        -webkit-box-flex: 5;
+            -ms-flex: 5;
+                flex: 5;
+    }
+
+.flex__flex-6 {
+        -webkit-box-flex: 6;
+            -ms-flex: 6;
+                flex: 6;
+    }
+
+.flex__flex-7 {
+        -webkit-box-flex: 7;
+            -ms-flex: 7;
+                flex: 7;
+    }
+
+.flex__flex-8 {
+        -webkit-box-flex: 8;
+            -ms-flex: 8;
+                flex: 8;
+    }
+
+.flex__flex-12 {
+        -webkit-box-flex: 2;
+            -ms-flex: 2 0 0px;
+                flex: 2 0 0;
+    }
+
+.flex--lm {
+        margin-left: 60px;
+        
+
+    }
+
