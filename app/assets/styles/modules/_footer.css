@@ -1,0 +1,40 @@
+.footer {
+    background-color: $mainBlack;
+    color: #FFF;
+    padding-bottom: 25px;
+    padding-top: 25px;
+
+    &__text {
+        display: inline;
+        font-size: 1.25rem;
+        letter-spacing: 1px;
+    }
+
+    &__icon {
+        float: right;
+        margin-top: 5px;
+        display: inline;
+        margin-right: 25px;
+        color: #FFF;
+    }
+}
+
+.fa-facebook:hover {
+    color: #3B5998;
+    transition: all 0.3s ease-out;
+}
+
+.fa-twitter:hover {
+    color: #00B6F1;
+    transition: all 0.3s ease-out;
+}
+
+.fa-instagram:hover {
+    color: #C32AA3;
+    transition: all 0.3s ease-out;
+}
+
+.fa-google-plus:hover {
+    color: #d34836;
+    transition: all 0.3s ease-out;
+}

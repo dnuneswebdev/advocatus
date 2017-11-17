@@ -11,7 +11,11 @@
         max-width: 976px;
     }
 
+    &--small {
+        max-width: 835px;
+    }
+
     &--tp {
-        padding-top: 75px;
+        padding-top: 50px;
     }
 }
