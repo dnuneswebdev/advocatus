@@ -1,0 +1,60 @@
+.testimonials {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: #FFF;
+    background-image: none;
+    background-color: $mainBlack;
+    position: relative;
+
+    @mixin atMedium {
+        background-image: url("../../assets/images/large-testimonials-image.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+    }
+
+    &__photo {
+        width:80%;
+        height: 100%;
+        box-shadow: 15px 15px 0px 1px rgba($mainGold, 0.75);
+    }
+
+    &__text {
+        color: $mainLightGray;
+        line-height: 1.875rem;
+        font-weight: 200;
+        font-family: "open sans";
+        font-size: 1rem;
+        
+    }
+
+    &__icon {
+        color: $mainGray;
+        position: absolute;
+        left: 41%;
+        top: 36%;
+        
+        
+    }
+
+    &__name {
+        margin-bottom: 10px;
+        font-weight: 400;
+        font-size: 1.562rem;
+    }
+
+    &__job {
+        color: $mainLightGray;
+        margin-top: 0;
+        font-weight: 200;
+        font-family: "open sans";
+        font-size: 1rem;
+    }
+
+    
+}
+
+input {
+    margin-top: 75px;
+}
