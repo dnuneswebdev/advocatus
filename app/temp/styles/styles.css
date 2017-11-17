@@ -1020,4 +1020,74 @@ input {
     margin-top: 75px;
 }
 
+.publications {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-bottom: 50px;
+    padding-top: 50px;
+
+}
+
+.publications__flex-container {
+        -ms-flex-preferred-size: 32%;
+            flex-basis: 32%;
+        border-bottom: 2px solid #e8bf5d;
+       
+    }
+
+.publications__photo {
+        
+       
+    }
+
+.publications__name {
+        display: inline;
+        margin-top: 0;
+        font-family: "open sans";
+        font-size: 0.8rem;
+        font-weight: 700;
+    }
+
+.publications__title {
+        margin-bottom: 0;
+        font-size: 1.25rem;
+        font-weight: 400;
+    }
+
+.publications__date {
+        color: #666666;
+        display: inline;
+        font-family: "open sans";
+        font-size: 0.8rem;
+        float: right;
+        margin-top: 0;
+    }
+
+.publications__text {
+        color: #666666;
+        font-family: "open sans";
+        line-height: 1.562rem;
+
+    }
+
+.publications__icon-share{
+        float:right;
+        margin-top: 0;
+        cursor: pointer;
+        margin-bottom: 20px;
+    }
+
+span {
+    color: #666666;
+    font-style: italic;
+    display: inline;
+    font-family: "open sans";
+    font-size: 0.8rem;
+    
+}
+
 
