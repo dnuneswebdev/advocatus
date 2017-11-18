@@ -3,15 +3,21 @@
     justify-content: space-between;
     padding-bottom: 50px;
     padding-top: 50px;
+    flex-direction: column;
+
+    @mixin atSmall {
+        flex-direction: row;
+    }
 
     &__flex-container {
         flex-basis: 32%;
         border-bottom: 2px solid $mainGold;
-       
+        margin-bottom: 50px;
+   
     }
 
     &__photo {
-        
+        width: 100%;
        
     }
 

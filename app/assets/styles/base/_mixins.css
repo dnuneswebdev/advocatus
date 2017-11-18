@@ -4,11 +4,19 @@
   }
 }
 
+@define-mixin atSmall2 {
+  @media (min-width: 621px) {
+    @mixin-content;
+  }
+}
+
+
 @define-mixin atMedium {
   @media (min-width: 800px) {
     @mixin-content;
   }
 }
+
 
 @define-mixin atMedium2 {
   @media (min-width: 913px) {
@@ -16,11 +24,21 @@
   }
 }
 
+
 @define-mixin atLarge {
   @media (min-width: 1010px) {
     @mixin-content;
   }
 }
+
+
+@define-mixin atLarge2 {
+  @media (min-width: 1075px) {
+    @mixin-content;
+  }
+}
+
+
 
 @define-mixin clearfix {
   &::after {

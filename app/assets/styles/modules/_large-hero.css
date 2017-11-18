@@ -5,9 +5,6 @@
     
     
     &__image {
-        /* width: 100%;
-        height: 100%; */
-
         display: block;
         
     }
@@ -29,12 +26,15 @@
     }
 
     &__title {
-        font-size: 2.812rem;
+        font-size: 2.187rem;
         font-weight: 100;
         margin: 0;
         letter-spacing: 1px;
         font-family: "Playfair Display";
         
+        @mixin atSmall {
+            font-size: 2.812rem;
+        }
 
         @mixin atMedium {
             font-size: 3.625rem;
@@ -43,27 +43,31 @@
     }
 
     &__subtitle {
-        font-size: 1.875rem;
+        font-size: 1.375rem;
         font-weight: 100;
         margin: 0;
         font-family: "open sans";
+
+        @mixin atSmall {
+            font-size: 1.875rem;
+        }
         
         
     }
 
     &__btn {
         position: absolute;
-        bottom: 5%;
-        left: 4%;
-
+        bottom: 6%;
+        left: 6%;
+        
         
         @mixin atMedium {
             left: 23%;
         }
 
-        @mixin atMedium2 {
+        @mixin atLarge2 {
 
-            bottom: 20%;
+            bottom: 21%;
             left: 65%;
         }
   

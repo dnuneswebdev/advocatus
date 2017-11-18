@@ -1,12 +1,28 @@
 .about-us {
-    position: relative;
-    overflow: hidden;
-    padding-top: 50px;
+    padding-top: 25px;
     padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
 
+    @mixin atSmall2 {
+        flex-direction: row;
+    }
+
+    &__flex-container {
+        
+
+        &--history {
+            flex: 6;
+        }
+
+        &--expertise {
+            flex: 5;
+        }
+   
+    }
 
     &__item-title {
-        font-size: 1.312rem;
+        font-size: 1.312rem; 
 
     }
     
@@ -14,18 +30,33 @@
     &__year {
         font-family: "open sans";
         font-weight: 900;
-        padding: 11px 0;
+        float: left;
         
         
-
     }
 
     &__description {
         font-family: "open sans";
         color: $mainGray;
         line-height: 1.562rem;
+        padding-right: 0;
+
         
-        
+        &--history {
+            padding-top: 0;
+            font-family: "open sans";
+            color: $mainGray;
+            line-height: 1.562rem;
+            padding-left: 60px;
+            padding-right: 0;
+
+            @mixin atSmall {
+                padding-right: 30px;
+                padding-top: 8px;
+                padding-left: 80px;
+            }
+            
+        }
     }
 
 

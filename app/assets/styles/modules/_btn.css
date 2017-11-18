@@ -1,6 +1,6 @@
 .btn {
     background-color: $mainGold;
-    padding: 10px 30px;
+    padding: 8px 15px;
     color: #000;
     font-family: "playfair display";
     border-radius: 50px;
@@ -8,5 +8,8 @@
     font-size: 1rem;
     font-weight: 600;
     
+    @mixin atSmall {
+        padding: 10px 30px;
+    }
 
 }

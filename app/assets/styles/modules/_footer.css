@@ -2,39 +2,59 @@
     background-color: $mainBlack;
     color: #FFF;
     padding-bottom: 25px;
-    padding-top: 25px;
+    padding-top: 0;
+
+    @mixin atSmall {
+        padding-top: 25px;
+    }
 
     &__text {
-        display: inline;
+        display: block;
         font-size: 1.25rem;
         letter-spacing: 1px;
+        text-align: center;
+        
+        @mixin atSmall {
+            display: inline;
+            text-align: left;
+        }
     }
 
     &__icon {
         float: right;
+        margin-bottom: 5px;
         margin-top: 5px;
         display: inline;
-        margin-right: 25px;
+        padding-right: 25px;
         color: #FFF;
+    
+
+        @mixin atSmall {
+            float: right;
+        }
     }
 }
 
 .fa-facebook:hover {
     color: #3B5998;
     transition: all 0.3s ease-out;
+    transform: scale(1.1);
 }
 
 .fa-twitter:hover {
     color: #00B6F1;
     transition: all 0.3s ease-out;
+    transform: scale(1.1);
 }
 
 .fa-instagram:hover {
     color: #C32AA3;
     transition: all 0.3s ease-out;
+    transform: scale(1.1);
 }
 
 .fa-google-plus:hover {
     color: #d34836;
     transition: all 0.3s ease-out;
+    transform: scale(1.1);
 }

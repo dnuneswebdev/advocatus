@@ -4,9 +4,11 @@
 
     &__flex-1 {
         flex: 1;
-
-        &--jcsp {
-            justify-content: space-between;
+        flex-basis: 100%;
+        
+        
+        @mixin atMedium {
+            flex-basis: 0;
         }
     }
 
@@ -24,6 +26,7 @@
 
     &__flex-7 {
         flex: 7;
+        
     }
 
     &__flex-8 {

@@ -5,6 +5,7 @@
     background-image: none;
     background-color: $mainBlack;
     position: relative;
+    
 
     @mixin atMedium {
         background-image: url("../../assets/images/large-testimonials-image.jpg");
@@ -15,9 +16,21 @@
     }
 
     &__photo {
-        width:80%;
-        height: 100%;
-        box-shadow: 15px 15px 0px 1px rgba($mainGold, 0.75);
+        width: 100%;
+        box-shadow: none;
+        margin-left: 0;
+        
+
+        @mixin atSmall {
+            width: 50%;
+            margin-left: 25%;
+        }
+
+        @mixin atMedium {
+            width:80%;
+            box-shadow: 15px 15px 0px 1px rgba($mainGold, 0.75);
+            margin-left: 0;
+        }
     }
 
     &__text {
@@ -56,5 +69,11 @@
 }
 
 input {
-    margin-top: 75px;
+    margin-top: 45px;
+    
+
+    @mixin atMedium {
+        margin-top: 75px;
+        
+    }
 }

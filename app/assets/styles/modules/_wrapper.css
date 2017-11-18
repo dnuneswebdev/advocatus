@@ -9,6 +9,7 @@
 
     &--medium {
         max-width: 976px;
+
     }
 
     &--small {
@@ -17,5 +18,36 @@
 
     &--tp {
         padding-top: 50px;
+    }
+
+    &--no-padding-until-medium {
+        padding-left: 0;
+        padding-right: 0;
+
+        @mixin atMedium {
+            padding-left: 100px;
+            padding-right: 100px;
+        }
+    }
+
+    &--no-padding-until-medium2 {
+        padding-left: 0;
+        padding-right: 0;
+
+        @mixin atMedium2 {
+            padding-left: 100px;
+            padding-right: 100px;
+        }
+    }
+
+    &--small-padding-until-medium {
+        padding-left: 20px;
+        padding-right: 20px;
+
+        @mixin atMedium {
+            padding-left: 100px;
+            padding-right: 100px;
+        }
+
     }
 }

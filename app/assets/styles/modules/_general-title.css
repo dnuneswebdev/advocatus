@@ -1,6 +1,10 @@
 .general-title {
     font-family: "FairPlay Display";
-    max-width: 610px;
+    max-width: 1200px;
+
+    @mixin atSmall {
+        max-width: 610px;
+    }
 
     &__title {
         font-weight: 400;
