@@ -50,4 +50,15 @@
         }
 
     }
+
+    &--small-padding-until-large {
+        padding-left: 20px;
+        padding-right: 20px;
+
+        @mixin atLarge {
+            padding-left: 100px;
+            padding-right: 100px;
+        }
+
+    }
 }

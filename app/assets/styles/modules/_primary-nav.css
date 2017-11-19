@@ -1,15 +1,21 @@
 .primary-nav {
     
     
-
-
     &__brand {
         font-size: 1.562rem;
         font-weight: 900;
         padding-top: 30px;
         padding-bottom: 30px;
         font-family: "Playfair Display";
-        
+
+        @mixin atSmall {
+            padding-bottom: 15px;
+        }
+
+        @mixin atMedium {
+            padding-bottom: 30px;
+        }
+
         span {
             color: $mainGold;
             font-size: 1.25rem;
@@ -17,13 +23,27 @@
     }
 
     &__nav-item {
-        padding: 38px 0 10px 0;
-        margin-right: 25px;
+        padding: 0px 0 5px 0;
+        margin-right: 15px;
+        margin-bottom: 15px;
         font-weight: 600;
         font-size: 0.875rem;
         font-family: "open sans";
         transition: all 0.2s ease-in-out;
+        display: inline-block;
         
+
+        @mixin atSmall {
+            padding: 10px 0 10px 0;
+            margin-right: 10px;
+            
+        }
+
+        @mixin atMedium {
+            padding: 38px 0 10px 0;
+            margin-right: 25px;
+            
+        }
 
         &:hover {
             border-bottom: 5px solid $mainGold;
@@ -33,16 +53,19 @@
     }
 
     &--pull-right {
-        float: right;
-        display: none;
-
-        @mixin atMedium2 {
-            display: initial;
+        text-align: center;
+        
+        @mixin atMedium {
+            float: right;
         }
     }
 
     &--pull-left {
-        float: left;
+        text-align: center;
+
+        @mixin atMedium {
+            float: left;
+        }
     }
 
     ul {
@@ -54,14 +77,14 @@
 
     li {
         list-style: none;
-        display: inline-block;
+        
     }
 
     a {
         text-transform: uppercase;
-        display: block;
         text-decoration: none;
         color: #000;
+        
         
     }
 }

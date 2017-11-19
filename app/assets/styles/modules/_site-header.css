@@ -1,55 +1,77 @@
 .site-header {
     position: absolute;
-    position: sticky;
     width: 100%;
-    height: 100%;
     z-index: 1;
     overflow: hidden;
 
-    
-    
+    @mixin atSmall {
+        position: sticky;
+    }
+
+    &--expanded {
+        background-color: rgba(255,255,255,0.9);
+    }
 
 
+    &__menu-content {
+        opacity: 0;
+        transform: scale(1.2);
+        transition: all 0.3s ease-out;
+        z-index: -10px;
+        position: relative;
+        padding-top: 0;
+        
 
+        @mixin atSmall {
+            opacity: 1;
+            z-index: 1;
+            padding-top: 0;
+            transform: scale(1);
+        }
 
-
-
-
-
-
-
+        &--is-visible {
+            opacity: 1;
+            z-index: 1;
+            transform: scale(1);
+        }
+    }
 
 
 
 
     &__menu-icon {
         width: 25px;
-        height: 20px;
+        height: 0;
         position: absolute;
         top: 35px;
         right: 25px;
         z-index: 10;
+        cursor: pointer;
+        
 
         &__top {
             position: absolute;
-            width: 20px;
+            width: 30px;
             height: 3px;
             top: 0;
             left: 0;
-            background-color: #000;
+            background-color: $mainBlack;
             transform-origin: 0 0;
             transition: transform 0.3s ease-out;
+
+            
         }
 
         &__middle {
             position: absolute;
-            width: 25px;
+            width: 20px;
             height: 3px;
             top: 8px;
-            left: 0;
-            background-color: #000;
+            right: 0;
+            background-color: $mainBlack;
             transition: all 0.3s ease-out;
             transform-origin: 0 50%;
+            
         }
 
         &__bottom{
@@ -58,14 +80,30 @@
             height: 3px;
             top: 16px;
             left: 0;
-            background-color: #000;
+            background-color: $mainBlack;
             transform-origin: 0 100%;
             transition: transform 0.3s ease-out;
         }
 
-        @mixin atMedium2 {
+        @mixin atSmall {
             display: none;
         }
 
+    }
+
+    &__menu-icon--close-x {
+        
+        .site-header__menu-icon__top {
+            transform: rotate(45deg) scaleX(1.25) translateY(-6px);
+        }
+
+        .site-header__menu-icon__bottom {
+            transform: rotate(-45deg) scaleX(1.25) translateY(6px);
+        }
+
+        .site-header__menu-icon__middle {
+            opacity: 0;
+            transform: scaleX(0);
+        }
     }
 }
