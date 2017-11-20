@@ -873,6 +873,8 @@ img {
         position: absolute;
         bottom: 6%;
         left: 6%;
+        -webkit-transition: all 0.2s ease-out;
+        transition: all 0.2s ease-out;
   
     }
 
@@ -893,6 +895,11 @@ img {
   
     }
   }
+
+.large-hero__btn:hover {
+            background-color: #FFF;
+            color: #e8bf5d;
+        }
 
 .border--b-left {
         border-left: 2px solid #e8bf5d;
@@ -1553,8 +1560,15 @@ span {
 
 .contact__btn {
         margin-bottom: 55px;
+        -webkit-transition: all 0.2s ease-out;
+        transition: all 0.2s ease-out;
         
     }
+
+.contact__btn:hover {
+            background-color: #FFF;
+            color: #e8bf5d;
+        }
 
 .contact input, .contact textarea {
         border: none;
@@ -1684,6 +1698,93 @@ span {
         bottom: 0;
         
     }
+
+.modal {
+    position: fixed;
+    z-index: 10;
+    background-color: rgba(17,17,17,0.95);
+    opacity: 0;
+    visibility: hidden;
+    top: 10%;
+    left: 25%;
+    right: 25%;
+    bottom: 10%;
+    -webkit-transform: translateY(-10%);
+            transform: translateY(-10%);
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    -webkit-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+}
+
+.modal--visible {
+        opacity: 1;
+        visibility: visible;
+        -webkit-transform: scale(1);
+                transform: scale(1);
+        
+    }
+
+.modal__title {
+        color: #FFF;
+        padding-top: 40px;
+        margin-bottom: 0;
+    }
+
+.modal__form {
+        padding-top: 50px;
+        margin: 0 auto 15px auto;
+        
+    }
+
+.modal__close {
+        position: absolute;
+        color: #FFF;
+        top: 15px;
+        right: 15px;
+        font-size: 1.857rem;
+        cursor: pointer;
+
+    }
+
+.modal__close:hover {
+            color: #e8bf5d;
+        }
+
+.modal input, .modal textarea {
+        border: none;
+        border-bottom: 1px solid #b9b9b9;
+        display: block;
+        color: #666666;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 5px;
+        width: 100%;
+        margin-bottom: 20px;
+        margin-top: 0;
+        
+    }
+
+.modal textarea {
+        padding-top: 15px;
+        margin-bottom: 35px;
+    }
+
+.modal input::-webkit-input-placeholder {
+        color: #b9b9b9;
+        font-style: italic;
+    }
+
+.modal textarea::-webkit-input-placeholder {
+        color: #b9b9b9;
+        font-style: italic;
+    }
+
+.modal label {
+        color: #FFF;
+        font-family: "open sans";
+    }
+
 
 
 

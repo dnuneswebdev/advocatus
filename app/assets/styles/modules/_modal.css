@@ -1,36 +1,51 @@
-.contact {
-    margin-bottom: 0;
-    
+.modal {
+    position: fixed;
+    z-index: 10;
+    background-color: rgba($mainBlack,0.95);
+    opacity: 0;
+    visibility: hidden;
+    top: 10%;
+    left: 25%;
+    right: 25%;
+    bottom: 10%;
+    transform: translateY(-10%);
+    transform: scale(1.1);
+    transition: all 0.3s ease-in;
+   
 
-    &__photo {
-        box-shadow: none;
-        width: 100%;
-        padding-top: 55px;
-
-        @mixin atSmall {
-            width: 75%;
-            margin-left: 12%;
-        }
-
-        @mixin atMedium {
-            box-shadow: -15px 15px 0px 1px $mainGold;
-            padding-top: 0;
-            margin-left: 0;
-            width: 100%;
-        }
+    &--visible {
+        opacity: 1;
+        visibility: visible;
+        transform: scale(1);
         
     }
 
-    &__btn {
-        margin-bottom: 55px;
-        transition: all 0.2s ease-out;
+    &__title {
+        color: #FFF;
+        padding-top: 40px;
+        margin-bottom: 0;
+    }
+
+    &__form {
+        padding-top: 50px;
+        margin: 0 auto 15px auto;
+        
+    }
+
+    &__close {
+        position: absolute;
+        color: #FFF;
+        top: 15px;
+        right: 15px;
+        font-size: 1.857rem;
+        cursor: pointer;
 
         &:hover {
-            background-color: #FFF;
             color: $mainGold;
         }
-        
+
     }
+
 
     input, textarea {
         border: none;
@@ -65,10 +80,4 @@
         color: #FFF;
         font-family: "open sans";
     }
-}
-
-
-#contact {
-    background-color: $mainBlack;
-    color: #FFF;
 }
