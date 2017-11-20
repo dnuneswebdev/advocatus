@@ -13,6 +13,13 @@
         flex-basis: 32%;
         border-bottom: 2px solid $mainGold;
         margin-bottom: 50px;
+        transition: all 0.4s ease-out;
+        cursor: pointer;
+
+        &:hover {
+            transform: scale(1.02);
+            box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.2);
+        }
    
     }
 

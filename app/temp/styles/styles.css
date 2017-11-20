@@ -1266,6 +1266,8 @@ img {
         -ms-flex-preferred-size: 47%;
             flex-basis: 47%;
         margin-bottom: 35px;
+        -webkit-transition: all 0.3s ease-out;
+        transition: all 0.3s ease-out;
         
     }
 
@@ -1273,7 +1275,9 @@ img {
 
 .lawyers__flex-container {
             -ms-flex-preferred-size: 47%;
-                flex-basis: 47%
+                flex-basis: 47%;
+            -webkit-filter: grayscale(85%);
+                    filter: grayscale(85%)
         
     }
   }
@@ -1286,6 +1290,15 @@ img {
         
     }
   }
+
+.lawyers__flex-container:hover {
+            -webkit-transform: scale(1.05);
+                    transform: scale(1.05);
+            -webkit-filter: grayscale(0);
+                    filter: grayscale(0);
+            -webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.2);
+                    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.2);
+        }
 
 .lawyers__photo {
         width: 100%;
@@ -1307,7 +1320,7 @@ img {
 
 .lawyers__lawyer-name {
         margin-bottom: 0;
-        letter-spacing: 0.5px;
+        letter-spacing: 0.5px; 
 
     }
 
@@ -1441,8 +1454,18 @@ input {
             flex-basis: 32%;
         border-bottom: 2px solid #e8bf5d;
         margin-bottom: 50px;
+        -webkit-transition: all 0.4s ease-out;
+        transition: all 0.4s ease-out;
+        cursor: pointer;
    
     }
+
+.publications__flex-container:hover {
+            -webkit-transform: scale(1.02);
+                    transform: scale(1.02);
+            -webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.2);
+                    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.2);
+        }
 
 .publications__photo {
         width: 100%;
@@ -1648,5 +1671,21 @@ span {
     -webkit-transform: scale(1.1);
             transform: scale(1.1);
 }
+
+.reveal-item {
+    opacity: 0;
+    -webkit-transition: all 1.5s ease-out;
+    transition: all 1.5s ease-out;
+    bottom: -100px;
+}
+
+.reveal-item--visible {
+        opacity: 1;
+        bottom: 0;
+        
+    }
+
+
+
 
 

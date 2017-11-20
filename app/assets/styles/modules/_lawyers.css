@@ -8,20 +8,29 @@
     &__flex-container {
         flex-basis: 47%;
         margin-bottom: 35px;
+        transition: all 0.3s ease-out;
 
         @mixin atSmall {
             flex-basis: 47%;
+            filter: grayscale(85%);
             
         }
 
         @mixin atMedium {
             flex-basis: 23%;
         }
+
+        &:hover {
+            transform: scale(1.05);
+            filter: grayscale(0);
+            box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.2);
+        }
         
     }
 
     &__photo {
         width: 100%;
+        
         
         @mixin atSmall {
             width: 100%;
@@ -34,7 +43,7 @@
 
     &__lawyer-name {
         margin-bottom: 0;
-        letter-spacing: 0.5px;
+        letter-spacing: 0.5px; 
 
     }
 
