@@ -472,14 +472,29 @@ img {
     width: 100%;
     z-index: 1;
     overflow: hidden;
+    padding: 25px 0 25px 0;
 }
 
 @media (min-width: 530px) {
 
 .site-header {
         position: -webkit-sticky;
-        position: sticky
+        position: sticky;
+        -webkit-transition: all 0.5s ease-out;
+        transition: all 0.5s ease-out
 }
+  }
+
+@media (min-width: 800px) {
+
+        .site-header--fixed {
+            position: fixed;
+            background-color: #FFF;
+            padding: 10px 0 10px 0;
+            -webkit-transition: all 0.5s ease-out;
+            transition: all 0.5s ease-out;
+            
+        }
   }
 
 .site-header--expanded {
@@ -599,7 +614,6 @@ img {
 .primary-nav__brand {
         font-size: 1.562rem;
         font-weight: 900;
-        padding-top: 30px;
         padding-bottom: 30px;
         font-family: "Playfair Display";
     }
@@ -607,14 +621,7 @@ img {
 @media (min-width: 530px) {
 
 .primary-nav__brand {
-            padding-bottom: 15px
-    }
-  }
-
-@media (min-width: 800px) {
-
-.primary-nav__brand {
-            padding-bottom: 30px
+            padding-bottom: 10px
     }
   }
 
@@ -626,7 +633,6 @@ img {
 .primary-nav__nav-item {
         padding: 0px 0 5px 0;
         margin-right: 15px;
-        margin-bottom: 15px;
         font-weight: 600;
         font-size: 0.875rem;
         font-family: "open sans";
@@ -640,7 +646,7 @@ img {
 @media (min-width: 530px) {
 
 .primary-nav__nav-item {
-            padding: 10px 0 10px 0;
+            padding: 30px 0 0 0;
             margin-right: 10px
 
 
@@ -650,8 +656,8 @@ img {
 @media (min-width: 800px) {
 
 .primary-nav__nav-item {
-            padding: 38px 0 10px 0;
-            margin-right: 25px
+            margin-right: 25px;
+            padding: 8px 0 8px 0
 
 
     }
@@ -705,7 +711,12 @@ img {
         color: #000;
         
         
+        
     }
+
+.primary-nav a.is-current-link {
+            color: #e8bf5d;
+        }
 
 .wrapper {
     padding-left: 100px;

@@ -1,19 +1,14 @@
 .primary-nav {
     
-    
+
     &__brand {
         font-size: 1.562rem;
         font-weight: 900;
-        padding-top: 30px;
         padding-bottom: 30px;
         font-family: "Playfair Display";
 
         @mixin atSmall {
-            padding-bottom: 15px;
-        }
-
-        @mixin atMedium {
-            padding-bottom: 30px;
+            padding-bottom: 10px;
         }
 
         span {
@@ -25,7 +20,6 @@
     &__nav-item {
         padding: 0px 0 5px 0;
         margin-right: 15px;
-        margin-bottom: 15px;
         font-weight: 600;
         font-size: 0.875rem;
         font-family: "open sans";
@@ -34,15 +28,15 @@
         
 
         @mixin atSmall {
-            padding: 10px 0 10px 0;
+            padding: 30px 0 0 0;
             margin-right: 10px;
             
         }
 
         @mixin atMedium {
-            padding: 38px 0 10px 0;
             margin-right: 25px;
-            
+            padding: 8px 0 8px 0;
+               
         }
 
         &:hover {
@@ -84,6 +78,11 @@
         text-transform: uppercase;
         text-decoration: none;
         color: #000;
+
+        &.is-current-link {
+            color: $mainGold;
+        }
+        
         
         
     }
