@@ -1705,17 +1705,39 @@ span {
     background-color: rgba(17,17,17,0.95);
     opacity: 0;
     visibility: hidden;
-    top: 10%;
-    left: 25%;
-    right: 25%;
-    bottom: 10%;
-    -webkit-transform: translateY(-10%);
-            transform: translateY(-10%);
+    top: 5%;
+    left: 5%;
+    right: 5%;
+    -webkit-transform: translateY(-5%);
+            transform: translateY(-5%);
     -webkit-transform: scale(1.1);
             transform: scale(1.1);
     -webkit-transition: all 0.3s ease-in;
     transition: all 0.3s ease-in;
 }
+
+@media (min-width: 530px) {
+
+.modal {
+        top: 10%;
+        left: 10%;
+        right: 10%;
+        bottom: 10%;
+        -webkit-transform: translateY(-10%);
+                transform: translateY(-10%)
+}
+  }
+
+@media (min-width: 913px) {
+
+.modal {
+        top: 10%;
+        left: 25%;
+        right: 25%;
+        bottom: 10%;
+        -webkit-transform: translateY(-10%);
+                transform: translateY(-10%)
+}}
 
 .modal--visible {
         opacity: 1;
@@ -1733,7 +1755,7 @@ span {
 
 .modal__form {
         padding-top: 50px;
-        margin: 0 auto 15px auto;
+        margin-bottom: 15px;
         
     }
 

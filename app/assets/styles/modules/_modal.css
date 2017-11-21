@@ -4,13 +4,30 @@
     background-color: rgba($mainBlack,0.95);
     opacity: 0;
     visibility: hidden;
-    top: 10%;
-    left: 25%;
-    right: 25%;
-    bottom: 10%;
-    transform: translateY(-10%);
+    top: 5%;
+    left: 5%;
+    right: 5%;
+    transform: translateY(-5%);
     transform: scale(1.1);
     transition: all 0.3s ease-in;
+    
+    @mixin atSmall {
+        top: 10%;
+        left: 10%;
+        right: 10%;
+        bottom: 10%;
+        transform: translateY(-10%);
+        
+        
+    }
+
+    @mixin atMedium2 {
+        top: 10%;
+        left: 25%;
+        right: 25%;
+        bottom: 10%;
+        transform: translateY(-10%);
+    }
    
 
     &--visible {
@@ -28,7 +45,7 @@
 
     &__form {
         padding-top: 50px;
-        margin: 0 auto 15px auto;
+        margin-bottom: 15px;
         
     }
 
