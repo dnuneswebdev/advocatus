@@ -510,6 +510,7 @@ img {
         z-index: -10px;
         position: relative;
         padding-top: 0;
+        visibility: hidden;
     }
 
 @media (min-width: 530px) {
@@ -519,7 +520,8 @@ img {
             z-index: 1;
             padding-top: 0;
             -webkit-transform: scale(1);
-                    transform: scale(1)
+                    transform: scale(1);
+            visibility: initial
     }
   }
 
@@ -528,6 +530,7 @@ img {
             z-index: 1;
             -webkit-transform: scale(1);
                     transform: scale(1);
+            visibility: initial;
         }
 
 .site-header__menu-icon {
@@ -636,8 +639,8 @@ img {
         font-weight: 600;
         font-size: 0.875rem;
         font-family: "open sans";
-        -webkit-transition: all 0.2s ease-in-out;
-        transition: all 0.2s ease-in-out;
+        -webkit-transition: all 0.3s;
+        transition: all 0.3s;
         display: inline-block;
 
 

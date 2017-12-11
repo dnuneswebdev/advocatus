@@ -36,19 +36,21 @@
         z-index: -10px;
         position: relative;
         padding-top: 0;
-        
+        visibility: hidden;
 
         @mixin atSmall {
             opacity: 1;
             z-index: 1;
             padding-top: 0;
             transform: scale(1);
+            visibility: initial;
         }
 
         &--is-visible {
             opacity: 1;
             z-index: 1;
             transform: scale(1);
+            visibility: initial;
         }
     }
 
