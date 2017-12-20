@@ -7,7 +7,10 @@
         <link href="css/style.css" rel="stylesheet">
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:100,400,700,900|Playfair+Display:100,400,700,900" rel="stylesheet">
-
+        <link href="./slick-1.8.0/slick/slick.css" type="text/css" rel="stylesheet">
+        <link href="./slick-1.8.0/slick/slick-theme.css" type="text/css" rel="stylesheet">
+        
+        
         <title>Advocatus</title>
 
         <!-- build:css assets/styles/styles.css -->
@@ -241,10 +244,13 @@
 
 
 <div class="row row--tp">
-<div class="row__medium-8">
+<div class="carousel">
+
+<div>
+    <div class="row__medium-8">
     <img class="testimonials__photo lazyload" 
     data-srcset="assets/images/testimonial-client-1.jpg">
-</div>
+    </div>
 
 <div class="row__medium-7">
     <p class="testimonials__text">" Lorem ipsum dolor sit, 
@@ -255,12 +261,28 @@
     cumque iste officiis ipsam aut, nobis sapiente a doloribus! "</p>
     <h3 class="testimonials__name">Allon Smith</h3>
     <h5 class="testimonials__job">CEO of AVC Group</h5>
-
-    <input type="radio" name="testslide" id="test-1" checked>
-    <input type="radio" name="testslide" id="test-2">
-    <input type="radio" name="testslide" id="test-3">
+</div>
 </div>
 
+<div>
+    <div class="row__medium-8">
+    <img class="testimonials__photo lazyload" 
+    data-srcset="assets/images/team-2.jpg">
+    </div>
+
+<div class="row__medium-7">
+    <p class="testimonials__text">" Lorem ipsum dolor sit, 
+    amet consectetur adipisicing elit. Suscipit, 
+    laudantium nemo. Eos deserunt sint illo enim eaque harum quae molestias in, 
+    cumque iste officiis ipsam aut, nobis sapiente a doloribus!
+    Eos deserunt sint illo enim eaque harum quae molestias in, 
+    cumque iste officiis ipsam aut, nobis sapiente a doloribus! "</p>
+    <h3 class="testimonials__name">Jason Briggs</h3>
+    <h5 class="testimonials__job">Director of MK Services</h5>
+</div>
+</div>
+
+</div>
 </div>
 </div>
 </section>
@@ -370,10 +392,16 @@
 <footer class="footer">
 <div class="wrapper wrapper--small-padding-until-medium">
     <h4 class="footer__text">Copyright &copy; dnuneswebdev 2017</h4>
-    <a href=""><i class="fa fa-instagram fa-lg footer__icon"></i></a>
-    <a href=""><i class="fa fa-google-plus fa-lg footer__icon"></i></a>
-    <a href=""><i class="fa fa-twitter fa-lg footer__icon"></i></a>
-    <a href=""><i class="fa fa-facebook fa-lg footer__icon"></i></a>
+    <ul class="footer__list">
+    <li class="footer__item">
+        <a href="" class="footer__link"><i class="fa fa-facebook fa-lg"></i></a></li>
+    <li class="footer__item">
+        <a href="" class="footer__link"><i class="fa fa-twitter fa-lg"></i></a></li>
+    <li class="footer__item">
+        <a href="" class="footer__link"><i class="fa fa-google-plus fa-lg"></i></a></li>
+    <li class="footer__item">
+        <a href="" class="footer__link"><i class="fa fa-instagram fa-lg"></i></a></li>
+    </ul>
 </div>
 </footer>
 
@@ -383,12 +411,13 @@
     <div class="wrapper wrapper--small-padding-until-medium">
         <h1 class="modal__title">
             <i class="fa fa-envelope-o"></i> Get in Touch</h1>
+
         <form class="modal__form">
             <label for="name">Name</label>
-            <input type="text" placeholder="Enter your name...">
+            <input type="text" placeholder="Enter your name..." required>
 
             <label for="email">Email</label>
-            <input type="email" placeholder="Enter your email...">
+            <input type="email" placeholder="Enter your email..." required>
 
             <label for="phone">Phone</label>
             <input type="text" placeholder="Enter your phone...">
@@ -397,9 +426,14 @@
             <textarea type="text" rows="4" placeholder="Enter your message..."></textarea>
             <a href="#" class="btn contact__btn">Send Message</a>
         </form>
+
     </div>
     <div class="modal__close">X</div>
 </div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<script src="./slick-1.8.0/slick/slick.min.js"></script>
+<script src="./assets/scripts/modules/Carousel.js"></script>
 
 <!-- build:js assets/scripts/app.js -->
 <script src="temp/scripts/app.js"></script>

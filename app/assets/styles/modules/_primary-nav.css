@@ -36,11 +36,11 @@
         @mixin atMedium {
             margin-right: 25px;
             padding: 8px 0 8px 0;
-               
-        }
 
-        &:hover {
-            border-bottom: 5px solid $mainGold;
+            &:hover {
+                border-bottom: 5px solid $mainGold;
+            }
+               
         }
 
 
@@ -82,8 +82,7 @@
         &.is-current-link {
             color: $mainGold;
         }
-        
-        
+ 
         
     }
 }

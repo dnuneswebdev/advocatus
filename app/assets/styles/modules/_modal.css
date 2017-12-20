@@ -18,7 +18,6 @@
         bottom: 10%;
         transform: translateY(-10%);
         
-        
     }
 
     @mixin atMedium2 {
@@ -37,16 +36,25 @@
         
     }
 
+
     &__title {
         color: #FFF;
-        padding-top: 40px;
+        padding-top: 20px;
         margin-bottom: 0;
+
+        @mixin atSmall {
+            padding-top: 40px;
+        }
     }
 
     &__form {
-        padding-top: 50px;
+        padding-top: 20px;
         margin-bottom: 15px;
         
+
+        @mixin atSmall {
+            padding-top: 50px;
+        }
     }
 
     &__close {

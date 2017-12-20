@@ -664,11 +664,11 @@ img {
 
 
     }
-  }
 
-.primary-nav__nav-item:hover {
-            border-bottom: 5px solid #e8bf5d;
-        }
+            .primary-nav__nav-item:hover {
+                border-bottom: 5px solid #e8bf5d;
+            }
+  }
 
 .primary-nav--pull-right {
         text-align: center;
@@ -712,8 +712,7 @@ img {
         text-transform: uppercase;
         text-decoration: none;
         color: #000;
-        
-        
+ 
         
     }
 
@@ -1358,7 +1357,7 @@ img {
         background-image: url("../../assets/images/large-testimonials-image.jpg");
         background-position: center;
         background-repeat: no-repeat;
-        background-size: cover
+        background-attachment: fixed
 
     
 }
@@ -1637,54 +1636,71 @@ span {
 
 .footer__text {
             display: inline;
-            text-align: left
+            float: left
     }
   }
 
-.footer__icon {
-        float: right;
-        margin-bottom: 5px;
-        margin-top: 5px;
-        display: inline;
-        padding-right: 25px;
-        color: #FFF;
+.footer__list {
+        list-style: none;
+        text-align: center;
+        float: none;
+        margin-top: 0;
+        
     }
 
 @media (min-width: 530px) {
 
-.footer__icon {
+.footer__list {
+            margin-top: 1.9rem;
             float: right
+        
     }
   }
 
+.footer__item {
+        display: inline;
+        padding-right: 25px;
+        
+    }
+
+.footer__item:not(:last-child) {
+           
+        }
+
+.footer__link {
+        text-decoration: none;
+        color: #FFF;
+        
+    }
+
 .fa-facebook:hover {
     color: #3B5998;
-    -webkit-transition: all 0.3s ease-out;
-    transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
     -webkit-transform: scale(1.1);
             transform: scale(1.1);
 }
 
 .fa-twitter:hover {
     color: #00B6F1;
-    -webkit-transition: all 0.3s ease-out;
-    transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
     -webkit-transform: scale(1.1);
             transform: scale(1.1);
 }
 
 .fa-instagram:hover {
     color: #C32AA3;
-    -webkit-transition: all 0.3s ease-out;
-    transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
     -webkit-transform: scale(1.1);
             transform: scale(1.1);
 }
 
 .fa-google-plus:hover {
     color: #d34836;
-    -webkit-transition: all 0.3s ease-out;
-    transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
     -webkit-transform: scale(1.1);
             transform: scale(1.1);
 }
@@ -1752,15 +1768,28 @@ span {
 
 .modal__title {
         color: #FFF;
-        padding-top: 40px;
+        padding-top: 20px;
         margin-bottom: 0;
     }
 
-.modal__form {
-        padding-top: 50px;
-        margin-bottom: 15px;
-        
+@media (min-width: 530px) {
+
+.modal__title {
+            padding-top: 40px
     }
+  }
+
+.modal__form {
+        padding-top: 20px;
+        margin-bottom: 15px;
+    }
+
+@media (min-width: 530px) {
+
+.modal__form {
+            padding-top: 50px
+    }
+  }
 
 .modal__close {
         position: absolute;

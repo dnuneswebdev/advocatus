@@ -6,6 +6,7 @@
 
     @mixin atSmall {
         padding-top: 25px;
+        
     }
 
     &__text {
@@ -16,45 +17,68 @@
         
         @mixin atSmall {
             display: inline;
-            text-align: left;
+            float: left;
         }
     }
 
-    &__icon {
-        float: right;
-        margin-bottom: 5px;
-        margin-top: 5px;
-        display: inline;
-        padding-right: 25px;
-        color: #FFF;
-    
+
+    &__list {
+        list-style: none;
+        text-align: center;
+        float: none;
+        margin-top: 0;
+
 
         @mixin atSmall {
+            margin-top: 1.9rem;
             float: right;
         }
+        
+    }
+
+    &__item {
+        display: inline;
+        padding-right: 25px;
+
+        &:not(:last-child) {
+           
+        }
+        
+    }
+
+    &__link {
+        text-decoration: none;
+        color: #FFF;
+        
     }
 }
 
+
+
+
+
+
+
 .fa-facebook:hover {
     color: #3B5998;
-    transition: all 0.3s ease-out;
+    transition: all 0.3s;
     transform: scale(1.1);
 }
 
 .fa-twitter:hover {
     color: #00B6F1;
-    transition: all 0.3s ease-out;
+    transition: all 0.3s;
     transform: scale(1.1);
 }
 
 .fa-instagram:hover {
     color: #C32AA3;
-    transition: all 0.3s ease-out;
+    transition: all 0.3s;
     transform: scale(1.1);
 }
 
 .fa-google-plus:hover {
     color: #d34836;
-    transition: all 0.3s ease-out;
+    transition: all 0.3s;
     transform: scale(1.1);
 }
